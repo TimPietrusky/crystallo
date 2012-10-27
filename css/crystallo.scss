@@ -53,17 +53,37 @@ body[data-max-width='1400'] section[data-cols] {
 body[data-max-width='1600'] section[data-cols] {
   max-width: 1600px;
 }
+@media screen and (min-width: 1600px) {
+  body[data-auto-extend="true"] section[data-cols] {
+    max-width: 1600px;
+  }
+}
 
 body[data-max-width='2048'] section[data-cols] {
   max-width: 2048px;
+}
+@media screen and (min-width: 2048px) {
+  body[data-auto-extend="true"] section[data-cols] {
+    max-width: 2048px;
+  }
 }
 
 body[data-max-width='3200'] section[data-cols] {
   max-width: 3200px;
 }
+@media screen and (min-width: 3200px) {
+  body[data-auto-extend="true"] section[data-cols] {
+    max-width: 3200px;
+  }
+}
 
 body[data-max-width='4000'] section[data-cols] {
   max-width: 4000px;
+}
+@media screen and (min-width: 4000px) {
+  body[data-auto-extend="true"] section[data-cols] {
+    max-width: 4000px;
+  }
 }
 
 button {
