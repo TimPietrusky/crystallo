@@ -206,6 +206,10 @@ This is all you need to keep focus on the content and not on pixel perfect desig
 </section>
 ```
 
+## Alpha testers
+
+* Mads Cordes
+
 
 2012 by Tim Pietrusky
 
