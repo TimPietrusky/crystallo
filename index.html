@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <title>crystallo</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Tim Pietrusky">
+    <meta name="robots" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    <meta name="description" content="crystallo is a solid & simple responsive micro framework to help you kick-start any form of web application.">
+
+    <meta property="og:title" content="crystallo" />
+    <meta property="og:description" content="crystallo is a solid & simple responsive micro framework to help you kick-start any form of web application." />
+    <meta property="og:image" content="http://timpietrusky.github.com/crystallo/img/crystallo.jpg" />
+    <meta property="og:url" content="http://timpietrusky.github.com/crystallo" />
+
+    <link rel="stylesheet" href="css/crystallo.css">
+    <link rel="stylesheet" href="css/theme/minimal.css">
+    <link rel="stylesheet" href="css/example.css">
+    <script src="http://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
+
+    <link rel="shortcut icon" href="img/tim-pietrusky-web-craftsman.ico" type="image/x-icon" />
+</head>
+
+<body data-max-width="1400" data-theme="minimal">
+
+    <section data-cols="1" data-valign="center">
+        <div>
+            <div data-logo="crystallo"></div>
+            <br>
+        </div>
+    	<div>
+	        <h1>crystallo</h1>
+	    	<p>it's ultra responsive to be a responsive css framework.</p>
+    	</div>
+    </section>
+
+<!-- Download/GitHub -->
+        <section data-cols="2" data-valign="center">
+            <div>
+                <a href="http://github.com/TimPietrusky/crystallo" target="_blank">
+                    <button data-high="2">Download</button>
+                </a>
+            </div>
+            <div>
+                <a href="http://github.com/TimPietrusky/crystallo" target="_blank">
+                    <button data-high="5">crystallo@GitHub</button>
+                </a>
+            </div>
+        </section>
+
+<!-- What/Features/Future -->
+    <section data-cols="3">
+        <div>
+            <h2 id="what-features-future">What?</h2>
+            <p>
+                crystallo is a solid & simple <b>responsive micro framework</b> to help you <b>kick-start</b> any form of <b>web creation</b>.
+            </p>
+            <p>
+                This is the <b>alpha</b> release and it would be awesome if you could help: critique, bugs, ideas!
+            </p>
+        </div>
+        <div>
+            <h2>Features!</h2>
+            <ul>
+                <li>clean & semantic HTML</li>
+                <li>class / id free</li>
+                <li>up to 5 fluid columns</li>
+                <li>buttons</li>
+                <li>vertical-align: center</li>
+                <li>theme support</li>
+                <li>and what ever you want!</li>
+            </ul>
+        </div>
+        <div>
+            <h2>In the not so far future...</h2>
+            <ul>
+                <li>image</li>
+                <li>form</li>
+                <li>navigation</li>
+                <li>table</li>
+                <li>theme skeleton / creator</li>
+            </ul>
+        </div>
+    </section>
+
+<!-- theming -->
+    <article>
+        <section data-cols="1" data-valign="center">
+            <div>
+                <h2 id="the-core-has-no-styles">The core has no styles</h2>
+            </div>
+        </section>
+
+        <section data-cols="3">
+            <div>
+                <p>
+                    So you can <b>take advantage</b> of the <b>core functionality</b> and create <b>your own</b> ultra custom <b>theme</b>. 
+                </p>
+                <p>
+                    There are just two predefined attributes, which affect the whole body.
+                </p>
+            </div>
+            <div>
+                <h3>data-max-width (px)</h3>
+                <ul>
+                    <li><b>none</b> [default]</li>
+                    <li>860</li>
+                    <li>1024</li>
+                    <li>1152</li>
+                    <li>1280</li>
+                    <li>1400</li>
+                    <li>1600</li>
+                    <li>2048</li>
+                    <li>3200</li>
+                    <li>4000</li>
+                </ul>
+            </div>
+            <div>
+                <h3>data-theme</h3>
+                <p></p>
+                <ul>
+                    <li><b>none</b> [default]</li>
+                    <li>minimal</li>
+                </ul>
+            </div>
+        </section>
+
+        <section data-cols="1">
+            <div>
+            <pre data-text="HTML">
+&lt;body data-max-width="1400" data-theme="minimal">
+&lt;/body>
+            </pre>
+            </div>
+        </section>
+    </article>
+
+
+
+<!-- up to 5 columns -->
+    <article>
+        <section data-cols="1" data-valign="center">
+            <div>
+                <h2 id="up-to-5-shiny-columns">up to 5 shiny columns</h2>
+                <p>This is all you need to <b>keep focus</b> on the <b>content</b> and <b>not</b> on <b>pixel perfect designs</b>. </p>
+            </div>
+        </section>
+    </article>
+
+<!-- 1 column -->
+    <article data-high="1" data-text="1 column">
+        <section data-cols="1" data-valign="center">
+        	<div>
+        		<h2>column 1</h2>
+        	</div>
+        </section>
+    </article>
+    <section data-cols="1">
+    	<div>
+    		<pre data-text="HTML">
+&lt;article data-high="1" data-text="1 column">
+  &lt;section data-cols="1" data-valign="center">
+    &lt;div>
+      &lt;h2>column 1&lt;/h2>
+    &lt;/div>
+  &lt;/section>
+&lt;/article>
+    		</pre>
+    	</div>
+    </section>
+
+<!-- 2 columns -->
+    <article data-high="2" data-text="2 columns">
+        <section data-cols="2" data-valign="center">
+        	<div>
+    			<h2>column 1</h2>
+        	</div>
+        	<div>
+    			<h2>column 2</h2>
+        	</div>
+        </section>
+    </article>
+    <section data-cols="1" data-text="2 columns">
+    	<div>
+    		<pre data-text="HTML">
+&lt;article data-high="2" data-text="2 columns">
+  &lt;section data-cols="2" data-valign="center">
+    &lt;div>
+      &lt;h2>column 1&lt;/h2>
+    &lt;/div>
+    &lt;div>
+      &lt;h2>column 2&lt;/h2>
+    &lt;/div>
+  &lt;/section>
+&lt;/article>
+    		</pre>
+    	</div>
+    </section>
+
+
+<!-- 3 columns -->
+    <article data-high="3" data-text="3 columns">
+        <section data-cols="3" data-valign="center">
+        	<div>
+    			<h2>column 1</h2>
+        	</div>
+        	<div>
+    			<h2>column 2</h2>
+        	</div>
+        	<div>
+    			<h2>column 3</h2>
+        	</div>
+        </section>
+    </article>
+    <section data-cols="1">
+    	<div>
+    		<pre data-text="HTML">
+&lt;article data-high="3" data-text="3 columns">
+  &lt;section data-cols="3" data-valign="center">
+    &lt;div>
+      &lt;h2>column 1&lt;/h2>
+    &lt;/div>
+    &lt;div>
+      &lt;h2>column 2&lt;/h2>
+    &lt;/div>
+    &lt;div>
+      &lt;h2>column 3&lt;/h2>
+    &lt;/div>
+  &lt;/section>
+&lt;/article>
+    		</pre>
+    	</div>
+    </section>
+
+
+<!-- 4 columns -->
+    <article data-high="4" data-text="4 columns">
+        <section data-cols="4" data-valign="center">
+        	<div>
+    			<h2>column 1</h2>
+        	</div>
+        	<div>
+    			<h2>column 2</h2>
+        	</div>
+        	<div>
+    			<h2>column 3</h2>
+        	</div>
+        	<div>
+    			<h2>column 4</h2>
+        	</div>
+        </section>
+    </article>
+    <section data-cols="1">
+    	<div>
+    		<pre data-text="HTML">
+&lt;article data-high="4" data-text="4 columns">
+  &lt;section data-cols="4" data-valign="center">
+    &lt;div>
+      &lt;h2>column 1&lt;/h2>
+    &lt;/div>
+    &lt;div>
+      &lt;h2>column 2&lt;/h2>
+    &lt;/div>
+    &lt;div>
+      &lt;h2>column 3&lt;/h2>
+    &lt;/div>
+    &lt;div>
+      &lt;h2>column 4&lt;/h2>
+    &lt;/div>
+  &lt;/section>
+&lt;/article>
+    		</pre>
+    	</div>
+    </section>
+
+
+<!-- 5 columns -->
+    <article data-high="5" data-text="5 columns">
+        <section data-cols="5" data-valign="center">
+            <div>
+                <h2>column 1</h2>
+            </div>
+            <div>
+                <h2>column 2</h2>
+            </div>
+            <div>
+                <h2>column 3</h2>
+            </div>
+            <div>
+                <h2>column 4</h2>
+            </div>
+            <div>
+                <h2>column 5</h2>
+            </div>
+        </section>
+    </article>
+    <section data-cols="1">
+    	<div>
+    		<pre data-text="HTML">
+&lt;article data-high="5" data-text="5 columns">
+  &lt;section data-cols="5" data-valign="center">
+    &lt;div>
+      &lt;h2>column 1&lt;/h2>
+    &lt;/div>
+    &lt;div>
+      &lt;h2>column 2&lt;/h2>
+    &lt;/div>
+    &lt;div>
+      &lt;h2>column 3&lt;/h2>
+    &lt;/div>
+    &lt;div>
+      &lt;h2>column 4&lt;/h2>
+    &lt;/div>
+    &lt;div>
+      &lt;h2>column 5&lt;/h2>
+    &lt;/div>
+  &lt;/section>
+&lt;/article>
+    		</pre>
+    	</div>
+    </section>
+
+
+<!-- buttons -->
+    <section data-cols="1" data-valign="center">
+        <div>
+            <h2 id="buttons-simple-and-nice">buttons - simple & nice</h2>
+        </div>
+    </section>
+
+    <article data-text="buttons">
+        <section data-cols="1" data-valign="center">
+            <div>
+              <button>default</button>
+            </div>
+        </section>
+
+        <section data-cols="5" data-valign="center">
+            <div>
+                <button data-high="1">high 1</button>
+            </div>
+            <div>
+                <button data-high="2">high 2</button>
+            </div>
+            <div>
+                <button data-high="3">high 3</button>
+            </div>
+            <div>
+                <button data-high="4">high 4</button>
+            </div>
+            <div>
+                <button data-high="5">high 5</button>
+            </div>
+        </section>
+
+        <section data-cols="1">
+            <div>
+                <pre data-text="HTML">
+&lt;section data-cols="1" data-valign="center">
+  &lt;div>
+    &lt;button>default/button>
+  &lt;/div>
+&lt;/section>
+
+&lt;section data-cols="5" data-valign="center">
+  &lt;div>
+    &lt;button data-high="1">high 1&lt/button>
+  &lt;/div>
+  &lt;div>
+    &lt;button data-high="1">high 2&lt/button>
+  &lt;/div>
+  &lt;div>
+    &lt;button data-high="1">high 3&lt/button>
+  &lt;/div>
+  &lt;div>
+    &lt;button data-high="1">high 4&lt/button>
+  &lt;/div>
+  &lt;div>
+    &lt;button data-high="1">high 5&lt/button>
+  &lt;/div>
+&lt;/section>
+                </pre>
+            </div>
+        </section>
+        
+    </article>
+
+
+<!-- important -->
+    <article data-text="★ important ★">
+        <section data-cols="1" data-valign="center">
+            <div>
+                <h2 id="#grab-your-fresh-piece">Grap your fresh piece</h2>
+                <a href="http://github.com/TimPietrusky/crystallo" target="_blank">
+                    <button data-high="2">Download</button>
+                </a>
+            </div>
+        </section>
+
+        <section data-cols="2" data-valign="center">
+            <div>
+                <h2>Get involved</h2>
+                    <a href="http://github.com/TimPietrusky/crystallo" target="_blank">
+                        <button data-high="5">crystallo@GitHub</button>
+                    </a>
+            </div>
+
+            <div>
+                <h2>Spread the word</h2>
+
+                <a href="https://twitter.com/share" class="twitter-share-button" data-text="crystallo is a responsive (not yet) framework to kick-start web dev" data-size="large">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                
+
+                <div class="g-plusone"></div>
+            </div>
+        </section>
+    </article>
+
+<!-- 2012 by Tim Pietrusky -->
+    <article>
+        <section data-cols="1">
+          <div>
+            <h3>2012 by Tim Pietrusky</h3>
+          <div>
+        </section>
+
+        <section data-cols="3">
+            <div>
+                <a href="http://timpietrusky.com" target="_blank">
+                   <button data-high="5">timpietrusky.com</button>
+                </a>
+            </div>
+
+            <div>
+                <a href="http://twitter.com/TimPietrusky" target="_blank">
+                   <button data-high="3">@TimPietrusky</button>
+                </a>
+            </div>
+
+            <div>
+                Thank you for watching the <b>crystallo is talking over the universe as we know it</b> show!
+            </div>
+        </section>
+    </article>
+
+    <!--<nav role="configuration"></nav>-->
+
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-5596313-4']);_gaq.push(['_setDomainName', 'timpietrusky.github.com']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
+
+    <script type="text/javascript">(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
+</body>
+</html>
