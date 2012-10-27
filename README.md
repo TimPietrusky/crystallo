@@ -1,6 +1,6 @@
 #crystallo
 
-![crystallo](https://github.com/TimPietrusky/crystallo/blob/master/img/crystallo_big.png)
+![crystallo](https://raw.github.com/TimPietrusky/crystallo/master/img/crystallo_big.png)
 
 2012 by Tim Pietrusky
 [timpietrusky.com](http://timpietrusky.com)
