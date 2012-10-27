@@ -1,5 +1,7 @@
 # crystallo
 
+![crystallo](https://raw.github.com/TimPietrusky/crystallo/master/img/crystallo_big.png)
+
 it's ultra responsive to be a responsive css framework.
 
 ## What?
@@ -31,7 +33,9 @@ So you can take advantage of the core functionality and create your own ultra cu
 
 There are just three predefined attributes, which affect the whole body.
 
+
 ### data-max-width (px)
+
 * none [default]
 * 860
 * 1024
@@ -44,9 +48,27 @@ There are just three predefined attributes, which affect the whole body.
 * 4000
 
 
+### data-theme
+
+The core has no style, so we need themes! Right?
+
+* none [default]
+* minimal
+* your custom theme here?
 
 
-![crystallo](https://raw.github.com/TimPietrusky/crystallo/master/img/crystallo_big.png)
+### data-auto-extend
+
+Even if data-max-width is specified, auto extend the body to the next size.
+
+* false [default]
+* true
+
+```html
+<body data-max-width="1400" data-theme="minimal" data-auto-extend="true">
+</body>
+```
+
 
 2012 by Tim Pietrusky
 
