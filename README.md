@@ -69,6 +69,123 @@ Even if data-max-width is specified, auto extend the body to the next size.
 </body>
 ```
 
+## up to 5 shiny columns
+
+This is all you need to keep focus on the content and not on pixel perfect designs.
+
+### 1 column
+
+```html
+<article data-high="1" data-text="1 column">
+  <section data-cols="1" data-valign="center">
+    <div>
+      <h2>column 1</h2>
+    </div>
+  </section>
+</article>
+```
+
+### 2 columns  
+```html
+<article data-high="2" data-text="2 columns">
+  <section data-cols="2" data-valign="center">
+    <div>
+      <h2>column 1</h2>
+    </div>
+    <div>
+      <h2>column 2</h2>
+    </div>
+  </section>
+</article>
+```html
+
+### 3 columns  
+```html
+<article data-high="3" data-text="3 columns">
+  <section data-cols="3" data-valign="center">
+    <div>
+      <h2>column 1</h2>
+    </div>
+    <div>
+      <h2>column 2</h2>
+    </div>
+    <div>
+      <h2>column 3</h2>
+    </div>
+  </section>
+</article>
+```html
+
+### 4 columns  
+```html
+<article data-high="4" data-text="4 columns">
+  <section data-cols="4" data-valign="center">
+    <div>
+      <h2>column 1</h2>
+    </div>
+    <div>
+      <h2>column 2</h2>
+    </div>
+    <div>
+      <h2>column 3</h2>
+    </div>
+    <div>
+      <h2>column 4</h2>
+    </div>
+  </section>
+</article>
+```html
+        
+### 5 columns    
+```html
+<article data-high="5" data-text="5 columns">
+  <section data-cols="5" data-valign="center">
+    <div>
+      <h2>column 1</h2>
+    </div>
+    <div>
+      <h2>column 2</h2>
+    </div>
+    <div>
+      <h2>column 3</h2>
+    </div>
+    <div>
+      <h2>column 4</h2>
+    </div>
+    <div>
+      <h2>column 5</h2>
+    </div>
+  </section>
+</article>
+```html
+
+### Buttons
+
+```html
+<section data-cols="1" data-valign="center">
+  <div>
+    <button>default/button>
+  </div>
+</section>
+<section data-cols="5" data-valign="center">
+  <div>
+    <button data-high="1">high 1</button>
+  </div>
+  <div>
+    <button data-high="1">high 2</button>
+  </div>
+  <div>
+    <button data-high="1">high 3</button>
+  </div>
+  <div>
+    <button data-high="1">high 4</button>
+  </div>
+  <div>
+    <button data-high="1">high 5</button>
+  </div>
+</section>
+```html
+
 
 2012 by Tim Pietrusky
 
