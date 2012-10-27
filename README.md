@@ -97,7 +97,7 @@ This is all you need to keep focus on the content and not on pixel perfect desig
     </div>
   </section>
 </article>
-```html
+```
 
 ### 3 columns  
 ```html
@@ -114,7 +114,7 @@ This is all you need to keep focus on the content and not on pixel perfect desig
     </div>
   </section>
 </article>
-```html
+```
 
 ### 4 columns  
 ```html
@@ -134,7 +134,7 @@ This is all you need to keep focus on the content and not on pixel perfect desig
     </div>
   </section>
 </article>
-```html
+```
         
 ### 5 columns    
 ```html
@@ -157,7 +157,7 @@ This is all you need to keep focus on the content and not on pixel perfect desig
     </div>
   </section>
 </article>
-```html
+```
 
 ### Buttons
 
@@ -184,7 +184,7 @@ This is all you need to keep focus on the content and not on pixel perfect desig
     <button data-high="1">high 5</button>
   </div>
 </section>
-```html
+```
 
 
 2012 by Tim Pietrusky
