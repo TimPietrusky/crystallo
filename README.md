@@ -32,9 +32,11 @@ This is the **alpha** release and it would be awesome if **you** could **help**:
 ### 1. Add the css & prefixfree
 
 ```html
+<head>
     <link rel="stylesheet" href="css/crystallo.css">
     <link rel="stylesheet" href="css/theme/minimal.css">
     <script src="http://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
+</head>
 ```
 
 ### 2. Define a max-width, theme or auto-extend if you like
