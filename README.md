@@ -27,6 +27,22 @@ This is the **alpha** release and it would be awesome if **you** could **help**:
 * table
 * theme skeleton / creator
 
+## How to
+
+### 1. Add the css & prefixfree
+
+```html
+    <link rel="stylesheet" href="css/crystallo.css">
+    <link rel="stylesheet" href="css/theme/minimal.css">
+    <script src="http://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
+```
+
+### 2. Define a max-width, theme or auto-extend if you like
+
+```html
+<body data-max-width="1400" data-theme="minimal" data-auto-extend="true">
+```
+
 ## The core has no styles
 
 So you can take advantage of the core functionality and create your own ultra custom theme.
