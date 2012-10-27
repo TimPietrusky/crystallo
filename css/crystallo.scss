@@ -155,6 +155,10 @@ section[data-cols='2'] {}
     width: 50%;
   }
 
+  section[data-cols='2'] > div:nth-child(odd) {
+    clear:both;
+  }
+
   section[data-cols='3'] > div:last-child,
   section[data-cols='5'] > div:last-child {
     width: 100%;

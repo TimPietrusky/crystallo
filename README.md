@@ -4,6 +4,8 @@
 
 it's ultra responsive to be a responsive css framework.
 
+[Here is the live version & preview. ](http://timpietrusky.github.com/crystallo)
+
 ## What?
 crystallo is a solid & simple **responsive micro framework** to help you **kick-start** any form of **web creation**.
 
