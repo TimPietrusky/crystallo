@@ -11,14 +11,22 @@ body[data-theme='minimal'] {
     border-bottom: 0.25em solid rgba(0, 0, 0, 0.4); }
   body[data-theme='minimal'] h2 {
     font: 1.65em/1.3em "Krona One", sans-serif;
-    letter-spacing: -0.05em; }
+    letter-spacing: -0.05em;
+    margin: .25em 0; }
   body[data-theme='minimal'] h3 {
     font-size: 1.25em;
     letter-spacing: .05em;
     color: #666;
-    margin-bottom: 0; }
-  body[data-theme='minimal'] a {
-    text-decoration: none; }
+    margin: .75em 0 .15em 0; }
+  body[data-theme='minimal'] a,
+  body[data-theme='minimal'] a:visited,
+  body[data-theme='minimal'] a:active {
+    text-decoration: none;
+    color: #00a; }
+  body[data-theme='minimal'] a:hover {
+    color: #999; }
+  body[data-theme='minimal'] p, body[data-theme='minimal'] ul {
+    margin: .25em 0 .45em 0; }
   body[data-theme='minimal'] button {
     background: #ccc;
     color: #333;
@@ -91,7 +99,8 @@ body[data-theme='minimal'] {
 @media screen and (max-width: 44em) {
   body[data-theme='minimal'] {
     font-size: 1.6em; }
-    body[data-theme='minimal'] h1 {
+    body[data-theme='minimal'] h1,
+    body[data-theme='minimal'] article[data-text]:after {
       font-size: 2.3em; }
     body[data-theme='minimal'] section > div {
       padding: .5em; } }

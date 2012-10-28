@@ -153,7 +153,10 @@ pre[data-text]:after {
 @media screen and (min-width: 74em) {
   section[data-cols='4'] > div,
   section[data-cols='4'] > div:last-child {
-    width: 25%; } }
+    width: 25%; }
+
+  section[data-cols='4'] > div:nth-child(4n+1) {
+    clear: both; } }
 /*
  * 5 columns
  */

@@ -183,11 +183,11 @@ section[data-cols='3'] {}
   }
 
   section[data-cols='5'] > div:nth-child(5) {
-    width:50%;
+    width: 50%;
   }
 
   section[data-cols='4'] > div:last-child {
-    width: 100%;
+     width: 100%;
   }
 }
 
@@ -201,6 +201,10 @@ section[data-cols='4'] {}
   section[data-cols='4'] > div,
   section[data-cols='4'] > div:last-child {
     width: 25%;
+  }
+
+  section[data-cols='4'] > div:nth-child(4n+1) {
+    clear: both;
   }
 }
 
