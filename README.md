@@ -11,6 +11,10 @@ crystallo is a solid & simple **responsive micro framework** to help you **kick-
 
 This is the **alpha** release and it would be awesome if **you** could **help**: critique, bugs, ideas!
 
+## Version
+
+alpha 0.0.1
+
 ## Features!
 
 * clean & semantic HTML
@@ -21,15 +25,7 @@ This is the **alpha** release and it would be awesome if **you** could **help**:
 * theme support
 * and what ever you want!
 
-## In the not so far future...
-
-* image
-* form
-* navigation
-* table
-* theme skeleton / creator
-
-## How to
+## How to use it
 
 ### 1. Add the css & prefixfree
 
@@ -46,6 +42,26 @@ This is the **alpha** release and it would be awesome if **you** could **help**:
 ```html
 <body data-max-width="1400" data-theme="minimal" data-auto-extend="true">
 ```
+
+## Roadmap
+
+### 0.0.2
+
+* Test all browsers
+* Add CSS3 mixins
+
+### 0.0.3
+* Add support for
+  * image
+  * table
+  * form
+
+### 0.0.4
+
+* Add support for
+  * navigation
+* Create a theme skeleton / creator
+
 
 ## The core has no styles
 
