@@ -27,13 +27,12 @@ alpha 0.0.1
 
 ## How to use it
 
-### 1. Add the css & prefixfree
+### 1. Add the css
 
 ```html
 <head>
     <link rel="stylesheet" href="css/crystallo.css">
     <link rel="stylesheet" href="css/theme/minimal.css">
-    <script src="http://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
 </head>
 ```
 
@@ -48,7 +47,7 @@ alpha 0.0.1
 ### 0.0.2
 
 * Test all browsers
-* Add CSS3 mixins
+* ~~Add CSS3 mixins~~ (#4)
 
 ### 0.0.3
 * Add support for
