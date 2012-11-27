@@ -47,7 +47,7 @@ alpha 0.0.1
 ### 0.0.2
 
 * Test all browsers
-* ~~Add CSS3 mixins~~ (#4)
+* ~~Add CSS3 mixins~~ #4
 
 ### 0.0.3
 * Add support for
