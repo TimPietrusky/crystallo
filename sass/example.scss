@@ -4,26 +4,6 @@ article[data-high] section > div {
 	@include box-shadow (0 0 0 .25em rgba(0, 0, 0, .2));
 }
 
-article[data-high="1"] {
-	background: hsla(60, 90%, 60%, .7);
-}
-
-article[data-high="2"] {
-	background: hsla(110, 90%, 60%, .7);
-}
-
-article[data-high="3"] {
-	background: hsla(210, 90%, 60%, .7);
-}
-
-article[data-high="4"] {
-	background: hsla(280, 90%, 60%, .7);
-}
-
-article[data-high="5"] {
-	background: hsla(360, 90%, 60%, .7);
-}
-
 nav[role="configuration"] {
 	position:fixed;
 	bottom:0;
