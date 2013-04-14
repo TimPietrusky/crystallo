@@ -201,28 +201,22 @@ section[data-cols='5'] {}
 }
 
 @if $crystallo-ie {
-  @media \0screen\,screen\9 {
-    body {
-      background: #f00;
-    }
+  section[data-cols='2'] > div,
+  section[data-cols='3'] > div,
+  section[data-cols='4'] > div,
+  section[data-cols='5'] > div,
+  section[data-cols='5'] > div+div+div+div,
+  section[data-cols='5'] > div+div+div+div+div {
+    float: left;
+    width: 50%;
+  }
 
-    section[data-cols='2'] > div,
-    section[data-cols='3'] > div,
-    section[data-cols='4'] > div,
-    section[data-cols='5'] > div,
-    section[data-cols='5'] > div+div+div+div,
-    section[data-cols='5'] > div+div+div+div+div {
-      float: left;
-      width: 50%;
-    }
+  section[data-cols='2'] > div:nth-child(odd) {
+    clear:both;
+  }
 
-    section[data-cols='2'] > div:nth-child(odd) {
-      clear:both;
-    }
-
-    section[data-cols='3'] > div:last-child,
-    section[data-cols='5'] > div:last-child {
-      width: 100%;
-    }
+  section[data-cols='3'] > div:last-child,
+  section[data-cols='5'] > div:last-child {
+    width: 100%;
   }
 }
