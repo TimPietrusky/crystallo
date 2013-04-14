@@ -13,7 +13,7 @@ This is the **alpha** release and it would be awesome if **you** could **help**:
 
 ## Version
 
-alpha 0.0.1
+0.0.25
 
 ## Features!
 
@@ -24,6 +24,14 @@ alpha 0.0.1
 * vertical-align: center
 * theme support
 * and what ever you want!
+
+## Supported browsers
+
+ * Chrome
+ * Firefox
+ * Opera
+ * Safari
+ * IE 9+ (IE <=8 support in alpha)
 
 ## How to use it
 
@@ -44,14 +52,8 @@ alpha 0.0.1
 
 ## Roadmap
 
-### 0.0.2
-
-* Test all browsers
-* ~~Add CSS3 mixins~~ #4
-
 ### 0.0.3
 * Add support for
-  * image
   * table
   * form
 
