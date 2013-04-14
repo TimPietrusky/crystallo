@@ -216,9 +216,22 @@ section[data-cols='5'] {}
       clear:both;
     }
 
-    section[data-cols='3'] > div:last-child,
-    section[data-cols='5'] > div:last-child {
-      width: 100%;
+    section[data-cols='3'] > div,
+    section[data-cols='4'] > div,
+    section[data-cols='5'] > div {
+      width: 33.3%;
+    }
+
+    section[data-cols='3'] > div+div+div {
+      width: 33.3%;
+    }
+
+    section[data-cols='5'] > div+div+div+div+div {
+      width: 50%;
+    }
+
+    section[data-cols='4'] > div+div+div+div {
+       width: 100%;
     }
   }
 }
