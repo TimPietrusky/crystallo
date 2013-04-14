@@ -12,7 +12,7 @@
  * http://timpietrusky.com
  */
 
-@import "compass/css3/box-sizing";
+@import "assets/assets";
 
 *,
 *:before,
@@ -30,68 +30,30 @@ body {
 }
 
 body {
-  overflow-x:hidden;
-}
+  overflow-x: hidden;
+  $breakpoints: 860, 1024, 1152, 1280, 1400, 1600, 2048, 3200, 4000;
+  @each $breakpoint in $breakpoints {
+      &[data-max-width="#{$breakpoint}"] section[data-cols] {
+      max-width: $breakpoint+px;
+    }
 
-body[data-max-width='860'] section[data-cols] {
-  max-width: 860px;
-}
-
-body[data-max-width='1024'] section[data-cols] {
-  max-width: 1024px;
-}
-
-body[data-max-width='1152'] section[data-cols] {
-  max-width: 1152px;
-}
-
-body[data-max-width='1280'] section[data-cols] {
-  max-width: 1280px;
-}
-
-body[data-max-width='1400'] section[data-cols] {
-  max-width: 1400px;
-}
-
-body[data-max-width='1600'] section[data-cols] {
-  max-width: 1600px;
-}
-@media screen and (min-width: 1600px) {
-  body[data-auto-extend="true"] section[data-cols] {
-    max-width: 1600px;
-  }
-}
-
-body[data-max-width='2048'] section[data-cols] {
-  max-width: 2048px;
-}
-@media screen and (min-width: 2048px) {
-  body[data-auto-extend="true"] section[data-cols] {
-    max-width: 2048px;
-  }
-}
-
-body[data-max-width='3200'] section[data-cols] {
-  max-width: 3200px;
-}
-@media screen and (min-width: 3200px) {
-  body[data-auto-extend="true"] section[data-cols] {
-    max-width: 3200px;
-  }
-}
-
-body[data-max-width='4000'] section[data-cols] {
-  max-width: 4000px;
-}
-@media screen and (min-width: 4000px) {
-  body[data-auto-extend="true"] section[data-cols] {
-    max-width: 4000px;
+    @if $breakpoint > 1500 {
+      @media screen and (min-width: $breakpoint+px) {
+        &[data-auto-extend="true"] section[data-cols] {
+          max-width: $breakpoint+px;
+        }
+      }
+    }
   }
 }
 
 button {
   width:100%;
   cursor:pointer;
+}
+
+img {
+  max-width:100%;
 }
 
 article {
@@ -103,11 +65,12 @@ section {
   position:relative;
   overflow: hidden;
   margin:0 auto;
-}
 
-section > div {
-  height:100%;
-  margin:0;
+  > div {
+    height:100%;
+    margin:0;
+    padding: $crystallo-padding-top $crystallo-padding-right $crystallo-padding-bottom $crystallo-padding-left;
+  }
 }
 
 /* 
@@ -139,7 +102,11 @@ pre[data-text]:after {
 /*
  * 1 column
  */
-section[data-cols='1'] {}
+section[data-cols='1'] {
+  > div {
+    display:block;
+  }
+}
 
 /*
  * 2 columns
@@ -226,9 +193,36 @@ section[data-cols='5'] {}
 }
 
 /* small screens */
-@media screen and (max-width: 44em) {
+@include breakpoint(baby-bear) {
   section[data-valign='center'] > div,
   section[data-valign='center'] > div + * {
     display: block;
+  }
+}
+
+@if $crystallo-ie {
+  @media \0screen\,screen\9 {
+    body {
+      background: #f00;
+    }
+
+    section[data-cols='2'] > div,
+    section[data-cols='3'] > div,
+    section[data-cols='4'] > div,
+    section[data-cols='5'] > div,
+    section[data-cols='5'] > div+div+div+div,
+    section[data-cols='5'] > div+div+div+div+div {
+      float: left;
+      width: 50%;
+    }
+
+    section[data-cols='2'] > div:nth-child(odd) {
+      clear:both;
+    }
+
+    section[data-cols='3'] > div:last-child,
+    section[data-cols='5'] > div:last-child {
+      width: 100%;
+    }
   }
 }

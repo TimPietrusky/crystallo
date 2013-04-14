@@ -1,0 +1,18 @@
+/*
+ * crystallo
+ */
+
+ /*
+ * Padding for the columns (section > div)
+ */
+$crystallo-padding: .75em;
+
+$crystallo-padding-top: $crystallo-padding;
+$crystallo-padding-right: $crystallo-padding;
+$crystallo-padding-bottom: $crystallo-padding;
+$crystallo-padding-left: $crystallo-padding;
+
+/*
+ * Do you need IE <= 8 support?
+ */
+ $crystallo-ie: true; 
