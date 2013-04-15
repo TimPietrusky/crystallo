@@ -12,14 +12,36 @@
  * http://timpietrusky.com
  */
 
-@import "assets/assets";
+/*
+ * compass
+ */
+@import "compass/css3/box-sizing";
 
+ /*
+  * Padding for the columns (section > div)
+  */
+$crystallo-padding: .75em;
+
+$crystallo-padding-top: $crystallo-padding;
+$crystallo-padding-right: $crystallo-padding;
+$crystallo-padding-bottom: $crystallo-padding;
+$crystallo-padding-left: $crystallo-padding;
+
+/*
+ * Do you need IE <= 8 support?
+ */
+ $crystallo-ie: false; 
+
+
+
+/*
+ * The code starts here...
+ */
 *,
 *:before,
 *:after {
   @include box-sizing(border-box);
 }
-
 
 html,
 body {
@@ -193,13 +215,14 @@ section[data-cols='5'] {}
 }
 
 /* small screens */
-@include breakpoint(baby-bear) {
+@media screen and (max-width: 44em) {
   section[data-valign='center'] > div,
   section[data-valign='center'] > div + * {
     display: block;
   }
 }
 
+/* Include CSS for IE <= 8 */
 @if $crystallo-ie {
   html.ie {
     section[data-cols='2'] > div,
@@ -212,7 +235,7 @@ section[data-cols='5'] {}
       width: 50%;
     }
 
-    section[data-cols='2'] > div:nth-child(odd) {
+    section[data-cols='2'] > div+div {
       clear:both;
     }
 
