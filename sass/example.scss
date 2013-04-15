@@ -72,10 +72,3 @@ div[data-logo="crystallo"]:after {
     @include transform (rotate(360deg));
   }
 }
-
-/* small screens */
-@media screen and (max-width: 44em) {
-  div[data-logo="crystallo"] {
-  	font-size:2.2em;
-  }
-}
