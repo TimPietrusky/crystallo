@@ -84,29 +84,27 @@ article {
 }
 
 section {
-  position:relative;
+  position: relative;
   overflow: hidden;
-  margin:0 auto;
+  margin: 0 auto;
+
+  /* vertical align */
+  &[data-valign='center'] {
+    display:block
+
+    > div,
+    > div + * {
+      display:table-cell;
+      vertical-align:middle;
+    }
+  }
 
   > div {
     height:100%;
     margin:0;
     padding: $crystallo-padding-top $crystallo-padding-right $crystallo-padding-bottom $crystallo-padding-left;
   }
-}
-
-/* 
- * vertical-align: center
- */
-section[data-valign='center'] {
-  display:block;
-}
-
-section[data-valign='center'] > div,
-section[data-valign='center'] > div + * {
-  display: table-cell;
-  vertical-align: middle;
-}
+} 
 
 /* pseudo elements default stuff */
 article[data-high]:before,
